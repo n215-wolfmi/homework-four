@@ -5,6 +5,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
     .ban-title {
         height: 68px;
@@ -27,7 +28,7 @@
         color: $site-white;
         width: 121px;
         height: 40px;
-        margin-top: 40px;
+        margin-top: 25px;
         border: none;
         text-transform: uppercase;
         font-family: "GillSansReg";

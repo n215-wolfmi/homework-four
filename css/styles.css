@@ -83,7 +83,7 @@ nav .links span {
 }
 
 .form-content {
-  max-width: 818px;
+  max-width: 75%;
   min-height: 200px;
   margin: 0 auto;
   margin-top: 50px;
@@ -98,17 +98,17 @@ nav .links span {
   justify-content: space-between;
   margin-top: 20px;
 }
-.form-content .top-boxes .short-holder input {
+.form-content .top-boxes .short-holder {
   height: 58px;
-  width: 344px;
+  width: 42%;
   padding-left: 10px;
   border: 2px solid #79ADDC;
   font-family: "GillSansReg";
   font-size: 15px;
 }
-.form-content .top-boxes .long-holder input {
+.form-content .top-boxes .long-holder {
   height: 58px;
-  width: 453px;
+  width: 56%;
   padding-left: 10px;
   border: 2px solid #79ADDC;
   font-family: "GillSansReg";
@@ -119,23 +119,27 @@ nav .links span {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  width: 100%;
 }
 .form-content .check h3 {
   font-family: "GillSansReg";
   font-size: 18px;
   font-weight: 100;
-  padding-top: 20px;
+  width: 15%;
+  margin-right: 50px;
+}
+.form-content .check .check-in-out {
+  width: 100%;
 }
 .form-content .check .check-in-out input {
   font-family: "GillSansReg";
   font-size: 18px;
   height: 58px;
-  width: 698px;
   padding-left: 10px;
   border: 2px solid #79ADDC;
 }
 .form-content .check .check-in-out .icon {
-  margin-left: -40px;
+  margin-left: -35px;
 }
 .form-content .dropbox-container {
   display: flex;
@@ -143,6 +147,7 @@ nav .links span {
   justify-content: space-between;
   margin-top: 20px;
   height: 58px;
+  width: 100%;
 }
 .form-content .dropbox-container .drop-title {
   font-family: "GillSansReg";
@@ -164,11 +169,11 @@ nav .links span {
   margin: 13px auto;
   font-size: 25px;
 }
-.form-content .message-box input {
+.form-content .message-box {
   font-family: "GillSansReg";
   font-size: 18px;
   margin-top: 20px;
-  width: 818px;
+  width: 100%;
   height: 192px;
   padding-left: 10px;
   padding-bottom: 130px;
@@ -181,45 +186,12 @@ nav .links span {
   color: #FFFFFF;
   background-color: #79ADDC;
   border: none;
-  width: 818px;
+  width: 100%;
   height: 60px;
   border-radius: 25px;
   margin-top: 37px;
 }
 
-@media screen and (max-width: 870px) {
-  .form-content {
-    width: 100%;
-    text-align: center;
-  }
-  .form-content .top-boxes {
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  .form-content .top-boxes .short-holder input {
-    width: 453px;
-  }
-  .form-content .top-boxes .long-holder {
-    margin-top: 20px;
-  }
-  .form-content .check {
-    flex-direction: column;
-  }
-  .form-content .check .check-in-out input {
-    width: 90%;
-  }
-  .form-content .dropbox-container {
-    width: 75%;
-    margin: 0 auto;
-  }
-  .form-content .message-box input {
-    width: 75%;
-  }
-  .form-content .submit {
-    width: 75%;
-  }
-}
 .info-box {
   margin: 0 auto;
   color: #FFFFFF;
@@ -227,6 +199,7 @@ nav .links span {
   text-align: center;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .info-box .ban-title {
   height: 68px;
@@ -247,7 +220,7 @@ nav .links span {
   color: #FFFFFF;
   width: 121px;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 25px;
   border: none;
   text-transform: uppercase;
   font-family: "GillSansReg";
