@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 nav {
   max-width: 980px;
+  width: 75%;
   height: 80px;
   margin: 0 auto;
   border-bottom: 2px solid #FFFFFF;
@@ -44,10 +45,10 @@ nav {
 nav .logo {
   width: 92px;
   height: 42px;
-  border: solid white 2px;
+  border: solid #FFFFFF 2px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 5px;
+  padding: 4px;
   font-family: "GillSansReg";
   font-size: 20px;
 }
@@ -62,6 +63,15 @@ nav .links span {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 820px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .links {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
 .banner {
   max-width: 1280px;
   height: 500px;
@@ -127,6 +137,33 @@ nav .links span {
 .form-content .check .check-in-out .icon {
   margin-left: -40px;
 }
+.form-content .dropbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 58px;
+}
+.form-content .dropbox-container .drop-title {
+  font-family: "GillSansReg";
+  font-size: 18px;
+}
+.form-content .dropbox-container .dropbox {
+  display: flex;
+  height: 58px;
+  width: 103px;
+  border: 2px solid #79ADDC;
+}
+.form-content .dropbox-container .dropbox .drop-desc {
+  font-family: "GillSansReg";
+  font-size: 18;
+  text-align: center;
+  margin: auto;
+}
+.form-content .dropbox-container .dropbox i {
+  margin: 13px auto;
+  font-size: 25px;
+}
 .form-content .message-box input {
   font-family: "GillSansReg";
   font-size: 18px;
@@ -150,6 +187,39 @@ nav .links span {
   margin-top: 37px;
 }
 
+@media screen and (max-width: 870px) {
+  .form-content {
+    width: 100%;
+    text-align: center;
+  }
+  .form-content .top-boxes {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .form-content .top-boxes .short-holder input {
+    width: 453px;
+  }
+  .form-content .top-boxes .long-holder {
+    margin-top: 20px;
+  }
+  .form-content .check {
+    flex-direction: column;
+  }
+  .form-content .check .check-in-out input {
+    width: 90%;
+  }
+  .form-content .dropbox-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .form-content .message-box input {
+    width: 75%;
+  }
+  .form-content .submit {
+    width: 75%;
+  }
+}
 .info-box {
   margin: 0 auto;
   color: #FFFFFF;
@@ -186,9 +256,9 @@ nav .links span {
 
 .triple-box {
   max-width: 818px;
+  min-height: 304px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
 }
@@ -224,9 +294,6 @@ nav .links span {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
 }
-.triple-box .country-box1 .box-title {
-  color: #FFFFFF;
-}
 .triple-box .country-box2 {
   width: 236px;
   height: 304px;
@@ -248,34 +315,19 @@ nav .links span {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
 }
 
-.dropbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-  height: 58px;
+@media screen and (max-width: 870px) {
+  .triple-box {
+    max-width: 236px;
+    margin: 0 auto;
+    display: block;
+  }
+  .triple-box .country-box1 {
+    margin-bottom: 100px;
+  }
+  .triple-box .country-box2 {
+    margin-bottom: 100px;
+  }
 }
-.dropbox-container .drop-title {
-  font-family: "GillSansReg";
-  font-size: 18px;
-}
-.dropbox-container .dropbox {
-  display: flex;
-  height: 58px;
-  width: 103px;
-  border: 2px solid #79ADDC;
-}
-.dropbox-container .dropbox .drop-desc {
-  font-family: "GillSansReg";
-  font-size: 18;
-  text-align: center;
-  margin: auto;
-}
-.dropbox-container .dropbox i {
-  margin: 13px auto;
-  font-size: 25px;
-}
-
 footer {
   width: 1280px;
   height: 100px;
@@ -290,7 +342,7 @@ footer .footer-container {
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
-  width: 980px;
+  max-width: 980px;
 }
 footer .footer-container .logo {
   width: 92px;
@@ -308,6 +360,15 @@ footer .footer-container .copy {
 }
 footer .footer-container .socials {
   font-size: 22px;
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    width: 100%;
+  }
+  footer .footer-container {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

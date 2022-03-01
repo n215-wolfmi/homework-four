@@ -1,8 +1,8 @@
 .triple-box {
     max-width: $home-form-width;
+    min-height: 304px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     color: $site-white;
 
@@ -40,10 +40,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(rgba($site-black, .5), rgba($site-black, .5)), url(../images/tour-01.jpg);
-
-        .box-title {
-            color: $site-white;
-        }
     }
 
     .country-box2 {
@@ -66,5 +62,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(rgba($site-black, .5), rgba($site-black, .5)), url(../images/tour-03.jpg);
+    }
+}
+
+@media screen and (max-width: 870px){
+    .triple-box {
+        max-width: 236px;
+        margin: $center;
+        display: block;
+
+        .country-box1 {
+            margin-bottom: 100px;
+        }
+        .country-box2 {
+            margin-bottom: 100px;
+        }
     }
 }

@@ -13,7 +13,7 @@ footer {
         align-items: center;
         justify-content: space-between;
         color: $site-white;
-        width: $site-width;
+        max-width: $site-width;
 
         .logo {
             width: 92px;
@@ -34,6 +34,15 @@ footer {
         .socials {
             font-size: 22px;
         }
+    }   
+}
+
+@media screen and (max-width: 1280px) {
+    footer {
+        width: 100%;
+
+        .footer-container {
+            width: 75%;
+        }
     }
-    
 }
